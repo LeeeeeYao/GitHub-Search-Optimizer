@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Search Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="images/logo.png" alt="GitHub Search Assistant Logo" class="logo">
+            <h1>GitHub Search Assistant</h1>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search on GitHub...">
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="search-type">Search Type:</label>
+                <select id="search-type">
+                    <option value="repositories">Repositories</option>
+                    <option value="code">Code</option>
+                    <option value="issues">Issues</option>
+                    <option value="pullrequests">Pull Requests</option>
+                    <option value="users">Users</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="language-select">Language:</label>
+                <select id="language-select">
+                    <option value="">Any</option>
+                    <option value="typescript">TypeScript</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                    <option value="cpp">C++</option>
+                    <option value="go">Go</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="php">PHP</option>
+                    <option value="swift">Swift</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="rust">Rust</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="stars-select">Stars:</label>
+                <select id="stars-select">
+                    <option value="">Any</option>
+                    <option value="10">>10</option>
+                    <option value="50">>50</option>
+                    <option value="100">>100</option>
+                    <option value="500">>500</option>
+                    <option value="1000">>1000</option>
+                    <option value="5000">>5000</option>
+                    <option value="10000">>10000</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="forks-select">Forks:</label>
+                <select id="forks-select">
+                    <option value="">Any</option>
+                    <option value="10">>10</option>
+                    <option value="50">>50</option>
+                    <option value="100">>100</option>
+                    <option value="500">>500</option>
+                    <option value="1000">>1000</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="date-select">Created:</label>
+                <select id="date-select">
+                    <option value="">Any time</option>
+                    <option value="today">Today</option>
+                    <option value="this-week">This week</option>
+                    <option value="this-month">This month</option>
+                    <option value="this-year">This year</option>
+                    <option value="last-year">Last year</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="search-btn">Search on GitHub</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
